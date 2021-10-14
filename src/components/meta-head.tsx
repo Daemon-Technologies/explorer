@@ -7,7 +7,7 @@ import { Statuses } from '@components/status';
 import { useNetworkMode } from '@common/hooks/use-network-mode';
 import { MempoolTransaction, Transaction } from '@stacks/stacks-blockchain-api-types';
 
-const defaultTitle = 'Stacks Explorer by Hiro';
+const defaultTitle = 'Stacks Explorer by Daemon Technologies';
 
 interface MetaProps {
   title?: string;
@@ -28,7 +28,7 @@ const useFaviconName = (s?: Transaction['tx_status'] | MempoolTransaction['tx_st
         return s;
     }
   };
-  return `favicon${status() ? `-${status()}` : ''}`;
+  return `favicon}`;
 };
 
 export const Meta = ({
@@ -86,7 +86,7 @@ export const Meta = ({
             </React.Fragment>
           ))
         : null}
-      <link rel="icon" type="image/svg+xml" href={`/static/${filename}.png`} />
+      <link rel="icon" type="image/svg+xml" href={`/static/favicon.ico`} />
     </Head>
   );
 };

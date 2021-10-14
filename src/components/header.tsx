@@ -18,7 +18,15 @@ export const LogoNavItem = React.memo((props: BoxProps) => {
     <Box {...props}>
       <NextLink href="/" passHref>
         <a>
-          <IconButton
+          <Box
+            width="44px"
+            height="39px"
+            as="img"
+            src="/logo-daemon.png"
+            alt="No transactions yet"
+          />
+
+          {/* <IconButton
             invert
             size="42px"
             iconSize="24px"
@@ -28,7 +36,7 @@ export const LogoNavItem = React.memo((props: BoxProps) => {
             aria-label="Homepage"
             title="Stacks Explorer"
             as="span"
-          />
+          /> */}
         </a>
       </NextLink>
     </Box>
