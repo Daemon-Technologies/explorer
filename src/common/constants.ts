@@ -65,7 +65,7 @@ export const DEFAULT_TESTNET_SERVER =
 export const DEFAULT_MAINNET_SERVER =
   config?.NEXT_PUBLIC_MAINNET_API_SERVER ||
   process.env.NEXT_PUBLIC_MAINNET_API_SERVER ||
-  'https://stacks-node-api.stacks.co';
+  'https://stacks-api.onstacks.com';
 
 export const VERSION = config?.VERSION || process.env.VERSION || packageJson.version;
 
